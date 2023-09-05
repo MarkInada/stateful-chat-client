@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stateful-chat-client"
+version = "0.1.0"
+description = ""
+authors = ["MarkInada <makotoinada132@gmail.com>"]
+readme = "README.md"
+packages = [{include = "stateful_chat_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pymongo = "^4.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

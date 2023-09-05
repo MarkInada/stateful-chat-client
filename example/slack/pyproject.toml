@@ -1,14 +1,17 @@
 [tool.poetry]
-name = "stateful-chat-client"
+name = "slack"
 version = "0.1.0"
 description = ""
 authors = ["MarkInada <makotoinada132@gmail.com>"]
 readme = "README.md"
-packages = [{include = "stateful_chat_client"}]
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-pymongo = "^4.5.0"
+slack-bolt = "^1.18.0"
+openai = "^0.28.0"
+langchain = "^0.0.281"
+stateful-chat-client = "^0.1.0"
+python-dotenv = "^1.0.0"
 
 
 [build-system]

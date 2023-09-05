@@ -22,13 +22,13 @@ pip install stateful-chat-client
 
 1. Setting up the logger
     ```python
-    from stateful-chat-client import ConversationLogger
+    from stateful_chat_client import ConversationLogger
 
     logger = ConversationLogger(host='localhost', port=27017,    database_name='conversation_database', collection_name='conversations')
     ```
 2. Recording a conversation
     ```python
-    from stateful-chat-client.conversation_logger import record_conversation
+    from stateful_chat_client.conversation_logger import record_conversation
     from langchain.llms import OpenAI
     from langchain.chains import ConversationChain
     from langchain.chains.conversation.memory import ConversationBufferMemory
@@ -45,7 +45,7 @@ pip install stateful-chat-client
     ```
 3. Retrieve past conversations and save to memory
     ```python
-    from stateful-chat-client.conversation_logger import retrieve_and_save_to_memory
+    from stateful_chat_client.conversation_logger import retrieve_and_save_to_memory
 
     new_conversation = ConversationChain(
         llm=OpenAI(),
@@ -59,4 +59,4 @@ pip install stateful-chat-client
 ## Requirements
 
 - MongoDB server (local or remote)
-- Python 3.8 or newer
+- Python 3.8.1 or newer
